@@ -8,27 +8,25 @@ class Player
 		@life_points = 10 		
 	end
 
-# ___________________________________
-
+#Si les points de vies sont inférieurs ou égal à 0 => "nom" a été tué, sinon Il reste tant de points à "nom"
 	def show_state
-		@life_points <= 0 ? "#{name} a été tué ! Points de vie: #{@life_points}" : "=> Il reste #{life_points} point à #{name}."
+		@life_points <= 0 ? "#{name} a été tué ! Points de vie: #{@life_points}" : "Il reste #{life_points} points de vie à #{name}."
 		
 	end
-
-#Si les points de vies sont inférieurs ou égal à 0 => "nom" a été tué, sinon Il reste tant de points à "nom"
+#_________________________________
 
 	def gets_damage(damage)
 		@life_points = @life_points - damage
 	end
-#_________________________________
 
+#Le dé va sortir un chiffre entre 1 et 6; l'ennemi perd ce chiffre en points de vie 
 	def attacks(ennemi)
 		dice = compute_damage
 		ennemi.gets_damage(dice)
 		puts "#{name} attaque #{ennemi.name}."
 		puts "Il lui inflige #{dice} points de dommages."
 	end
-#Le dé est égal à un chiffre entre 1 et 6 // L'ennemi perd ce nombre en points de vie 
+#__________________________________
 
 	def compute_damage
 	   return rand(1..6)
@@ -47,7 +45,7 @@ class HumanPlayer < Player
 #_______________________________
 
 	def show_state
-		puts "#{name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}."
+		print "#{name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}."
 	end
 #__________________________________
 
@@ -59,6 +57,8 @@ class HumanPlayer < Player
 	def search_weapon
 		new_weapon = rand(1..6)
 		puts "Tu as trouvé une arme de niveau #{new_weapon}."
+#New_weapon est égal à un chiffre entre 1 et 6, s'il est supérieur à la valeur de @weapon_level on le garde 
+#(et la valeur du dé devient la valeur de @weapon_level) et sinon on la laisse
 			if new_weapon > @weapon_level
 				@weapon_level = new_weapon
 				puts "Youhou, tu as maintenant une arme de niveau #{@weapon_level}!"
@@ -67,8 +67,6 @@ class HumanPlayer < Player
 			end
 	end
 
-#New_weapon est égal à un chiffre entre 1 et 6, s'il est supérieur à la valeur de @weapon_level on le garde 
-#(et la valeur du dé devient la valeur de @weapon_level) et sinon on la laisse
 
 	def search_health_pack
 		health_pack = rand(1..6)
