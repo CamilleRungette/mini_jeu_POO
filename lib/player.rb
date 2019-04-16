@@ -11,7 +11,7 @@ class Player
 # _______________________
 
 	def show_state
-		@life_points <= 0 ? "#{name} a été tué ! Points de vie: #{@life_points}" : "Il reste #{life_points} point à #{name}."
+		@life_points <= 0 ? "#{name} a été tué ! Points de vie: #{@life_points}" : "=> Il reste #{life_points} point à #{name}."
 		
 	end
 
