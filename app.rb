@@ -7,11 +7,14 @@ require_relative 'lib/player'
 player1 = Player.new("José")
 player2 = Player.new("Carrie")
 
-puts "Voici l'état de chaque joueur:"
-puts player1.show_state
-puts player2.show_state 
-puts
-puts "Passons à la phase d'attaque:"
+puts "VOICI L'ETAT DE CHAQUE JOUEUR:"
+	print player1.show_state
+	print player2.show_state
 
-
-# binding.pry
+puts "PASSONS A LA PHASE D'ATTAQUE:"
+	while player1.life_points > 0 && player2.life_points >0
+		puts player1.attacks(player2)
+		puts player2.show_state
+		puts player2.attacks(player1)
+		puts player1.show_state
+	end
