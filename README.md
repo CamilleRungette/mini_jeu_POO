@@ -1,31 +1,26 @@
-### mini_jeu_POO - The Hacking Project, Semaine 3
+### OOP_mini_game - The Hacking Project, Week 3
 
-
+## OPPs, better run
 ## ILS VEULENT TOUS MA POO
 
-Un super jeu qui va changer ta vision du jeu. Oublie Fortnite, oublie LOL, oublie Mario Kart, oublie LA BELOTTE;
-*--> et vient jouer ta POO avec les meilleurs de ta région <-- *
-
-Projet par Camille Rungette, sponsorisé par EA Sports, Joué-Club, et Perrier
+Amazing fighting game that's going to change your vision of the game for ever. Forget about Fortnite, Pokemon or card war; *OPPS, better run* is the T. 
 
 
 
-
-## Les fichiers 
+## The files
 
 ## App.rb 
-Un jeu de combat avec 2 joueurs, qui s'effectue automatiquement sur le terminal jusqu'à ce qu'un des joueurs n'ait plus de vie
+A fighting game with two players; the script runs automatically until one of th players is out of life points.
 
 ## App2.rb
-Un jeu de combat interactif; toi contre 2 joueurs. Ils ont chacun 10 points de vie. Tu en a 100, et tu possèdes une arme de niveau 1.
-À chaque tour tu as le choix entre
-- Chercher une meileure arme
-- Chercher des points de vie
-- Attaquer le joueur 1
-- Attaquer le joueur 2
-- Quitter le jeu
+An interactive fighting game; you, against two villains. They each have 10 life points, you have 100 AND a level 1 weapon.
+Every round, you have to make a choice:
+- looking for a better weapon
+- looking for life points
+- attacking player 1
+- attacking player 2
 
-Les deux autres joueurs attaquent à chaque tour. Le jeu s'effectue jusqu'à ce tu battes les deux joueurs, ou qu'un des joueurs te batte.
+The two other players will attack you after you player. The game runs until you beat the two players, or until one of them beats you
 
 
-##### Pour lire les fichiers; ruby nomdufichier
+##### To read the files: `ruby filename`
