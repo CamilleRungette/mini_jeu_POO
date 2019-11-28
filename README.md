@@ -26,3 +26,6 @@ Un jeu de combat interactif; toi contre 2 joueurs. Ils ont chacun 10 points de v
 - Quitter le jeu
 
 Les deux autres joueurs attaquent à chaque tour. Le jeu s'effectue jusqu'à ce tu battes les deux joueurs, ou qu'un des joueurs te batte.
+
+
+##### Pour lire les fichiers; ruby nomdufichier
