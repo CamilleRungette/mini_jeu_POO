@@ -1,9 +1,8 @@
 ### OOP_mini_game - The Hacking Project, Week 3
 
-## OPPs, better run
-## ILS VEULENT TOUS MA POO
+## OPPs, better run (Ils veulent tous ma POO)
 
-Amazing fighting game that's going to change your vision of the game for ever. Forget about Fortnite, Pokemon or card war; *OPPS, better run* is the T. 
+Amazing fighting game that's going to change your vision of the game for ever. Forget about Fortnite, Pokemon or card war; **OPPS, better run** is the T. 
 
 
 
