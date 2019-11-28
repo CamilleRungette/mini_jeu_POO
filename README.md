@@ -8,9 +8,8 @@ Un super jeu qui va changer ta vision du jeu. Oublie Fortnite, oublie LOL, oubli
 
 Projet par Camille Rungette, sponsorisé par EA Sports, Joué-Club, et Perrier
 
-========================================================================================================
 
-### Les fichiers 
+## Les fichiers 
 
 ## App.rb 
 Un jeu de combat avec 2 joueurs, qui s'effectue automatiquement sur le terminal jusqu'à ce qu'un des joueurs n'ait plus de vie
